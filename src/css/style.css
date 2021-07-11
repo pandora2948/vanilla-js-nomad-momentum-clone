@@ -1,0 +1,195 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+:root {
+  --color-background: #262223;
+  --color-main: #DDC6B6;
+  --color-input-gradient: #423e3f;
+  --color-input-border-bottom: #988a80;
+}
+
+.fade-in {
+  animation: fadein 3s;
+}
+
+.fade-out {
+  font-family: 'Nanum Myeongjo', serif;
+  color: var(--color-main);
+  background-image: linear-gradient(to right, var(--color-background), var(--color-input-gradient), var(--color-background));
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: solid 2px var(--color-main);
+  text-align: center;
+  animation: fadeout 1s forwards;
+  }
+
+.hidden {
+  display: none;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-main);
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+header {
+  height: 5.5rem;
+  display: flex;
+  border-bottom: solid 2px var(--color-main);
+  margin: 0 0 5rem 0;
+}
+
+h1.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: auto auto auto 2rem;
+}
+
+.main-title a {
+  text-decoration: none;
+  color: var(--color-main);
+}
+
+.watch-warp {
+  width: 20rem;
+  margin: auto 1.5rem auto auto;
+}
+
+.watch-warp h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: end;
+}
+.watch-warp h2:nth-child(2) {
+  margin: 1rem auto 0 auto;
+}
+
+main {
+  height: 36rem;
+}
+
+section.userinfo-wrap {
+  width: 50rem;
+  height: fit-content;
+  margin: auto;
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form.username--form {
+  height: 4rem;
+}
+
+.username--form input:focus {
+  outline: none;
+}
+
+.username--form input::placeholder {
+  font-size: 1.7rem;
+  color: var(--color-main);
+  text-align: center;
+}
+
+.username--form input {
+  font-family: 'Nanum Myeongjo', serif;
+  color: var(--color-main);
+  background-image: linear-gradient(to right, var(--color-background), var(--color-input-gradient), var(--color-background));
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: solid 3px var(--color-input-border-bottom);
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.username--appear {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2rem 0;
+  animation: fadein 2.5s;
+}
+
+ul.todo__ul {
+  width: 13rem;
+  border-top: solid 2px var(--color-main);
+  border-bottom: solid 2px var(--color-main);
+}
+
+.todo-list {
+  margin: 0.8rem 0 0.8rem 1rem;
+}
+
+.delete-todo {
+  float: right;
+}
+
+footer {
+  position: absolute;
+  height: fit-content;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.todo-wrap {
+  width: 50rem;
+  margin: auto;
+  height: 2.5rem;
+}
+
+input.todo--input::placeholder {
+  color: var(--color-main);
+  font-size: 1.7rem;
+}
+
+form.todo-form {
+  height: 100%;
+}
+
+input.todo--input:focus {
+  outline: none;
+}
+
+input.todo--input {
+  font-family: 'Nanum Myeongjo', serif;
+  height: 100%;
+  width: 100%;
+  color: var(--color-main);
+  border: none;
+  border-bottom: solid 3px var(--color-input-border-bottom);
+  background-image: linear-gradient(to right, var(--color-background), var(--color-input-gradient), var(--color-background));
+  text-align: center;
+  font-size: 1.9rem;
+}  
+
+.delete-todo {
+  font-weight: 800;
+  border: none;
+  background-color: var(--color-background);
+  color: var(--color-main);
+}
+

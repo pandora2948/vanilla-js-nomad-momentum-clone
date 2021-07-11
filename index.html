@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flow</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="main-title">
+      <a href="index.html">Flow</a>
+    </h1>
+    <article class="watch-warp">
+      <h2 id="dateDisplay">0000-00</h2>
+      <h2 id="clockDisplay">00:00:00</h2>
+    </article>
+  </header>
+
+  <main>
+    <article>
+      <section class="userinfo-wrap fade-in" id="userInfoWrap">
+        <form class="username--form" id="userNameForm">
+          <input type="text" placeholder="Type your name(max:10)" maxlength="10" id="userNameInput" autocomplete="off"
+            required />
+        </form>
+      </section>
+      <section>
+        <ul class="" id="todoUl">
+        </ul>
+      </section>
+    </article>
+
+  </main>
+
+  <footer>
+    <section class="todo-wrap fade-in" id="todoWrap">
+      <form class="todo-form" id="todoForm">
+        <input class="todo--input" id="todoInput" type="text" placeholder="What is your goal today?" autocomplete="off"
+          required />
+      </form>
+
+    </section>
+  </footer>
+
+  <script src="./src/js/clock.js"></script>
+  <script src="./src/js/userInfo.js"></script>
+  <script src="./src/js/toDos.js"></script>
+  <script src="./src/js/background.js"></script>
+</body>
+
+</html>
