@@ -16,9 +16,7 @@ function deleteTodo(event) {
   todos = todos.filter((toDo) => toDo.id !== parseInt(ereaseTodo.id));
   todoSave();
   const remainTodo = localStorage.getItem("todos");
-  console.log(remainTodo);
   if (remainTodo === "[]") {
-    console.log("ok");
     todoUl.classList.remove("todo__ul");
   }
 }
@@ -27,7 +25,7 @@ function createTodo(newTodo) {
   const todoList = document.createElement("li");
   todoList.id = newTodo.id;
   todoList.classList.add("todo-list");
-  todoUl.classList.add("todo__ul");
+  todoUl.classList.add("todo__ul","fade-in");
   const todoListSpan = document.createElement("span");
   todoListSpan.textContent = newTodo.text;
   const btn = document.createElement("button");

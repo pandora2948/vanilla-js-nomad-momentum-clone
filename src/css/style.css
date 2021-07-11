@@ -134,13 +134,18 @@ form.username--form {
 }
 
 ul.todo__ul {
+  position: absolute;
+  transform: translate(0, -50%);
+  left: 0;
+  top: 40%;
   width: 13rem;
   border-top: solid 2px var(--color-main);
   border-bottom: solid 2px var(--color-main);
 }
 
 .todo-list {
-  margin: 0.8rem 0 0.8rem 1rem;
+  margin: 0.8rem 0.4rem 0.8rem 1rem;
+  vertical-align: middle;
 }
 
 .delete-todo {
@@ -187,7 +192,10 @@ input.todo--input {
 }  
 
 .delete-todo {
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: fit-content;
+  padding: 0;
   border: none;
   background-color: var(--color-background);
   color: var(--color-main);
