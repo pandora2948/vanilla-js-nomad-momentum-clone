@@ -5,7 +5,6 @@ const API_KEY = "530ec2af3ce5dd5a947e5f9240e6b1ce";
 function onGeoOk(position) {
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
-  console.log("You live in", lat, lng);
   const lon = position.coords.longitude;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   fetch(url)
@@ -16,6 +15,6 @@ function onGeoOk(position) {
     });
 }
 function onGeoError() {
-  alert("You are too weak.");
+  alert("Please allow to trace your location for display weather.");
 }
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);

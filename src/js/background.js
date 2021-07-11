@@ -1,7 +1,7 @@
 const backGroundSection = document.querySelector("#backgroundImageSection");
 
 const randomArray = [
-  "#493a3e", "#585858", "#450d1b", "#f61b03"];
+  "#493a3e", "##423a3c", "#450d1b", "#653843"];
 
 function randomSelector() {
   const randomNumber = Math.floor(Math.random() * randomArray.length);
