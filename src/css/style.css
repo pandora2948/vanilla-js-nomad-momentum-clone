@@ -64,6 +64,7 @@ h1.main-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin: auto auto auto 2rem;
+  z-index: 2;
 }
 
 .main-title a {
@@ -72,7 +73,6 @@ h1.main-title {
 }
 
 .watch-warp {
-  width: 20rem;
   margin: auto 1.5rem auto auto;
 }
 
@@ -146,10 +146,8 @@ ul.todo__ul {
 .todo-list {
   margin: 0.8rem 0.4rem 0.8rem 1rem;
   vertical-align: middle;
-}
-
-.delete-todo {
-  float: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
@@ -201,3 +199,23 @@ input.todo--input {
   color: var(--color-main);
 }
 
+#backgroundImageSection {
+  width: 9rem;
+  height: 5.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.super-sexy-header-section-that-i-choose {
+  display: flex;
+}
+
+.super-sexy-weather-widget {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8rem;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.2rem;
+}
