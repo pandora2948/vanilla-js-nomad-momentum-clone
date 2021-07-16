@@ -219,3 +219,8 @@ input.todo--input {
   text-align: center;
   font-size: 1.2rem;
 }
+
+.background-img {
+  width: inherit;
+  height: inherit;
+}
